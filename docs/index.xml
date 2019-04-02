@@ -30,6 +30,15 @@ ArrayList：  实际是一个数组，默认初始容量大小为 10，int size�
     </item>
     
     <item>
+      <title>JAVA publish_to_ghpages</title>
+      <link>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</link>
+      <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
+      
+      <guid>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</guid>
+      <description>#!/bin/sh DIR=$(dirname &amp;quot;$0&amp;quot;) cd $DIR/.. if [[ $(git status -s) ]] then echo &amp;quot;The working directory is dirty. Please commit any pending changes.&amp;quot; exit 1; fi echo &amp;quot;Deleting old publication&amp;quot; rm -rf public mkdir public git worktree prune rm -rf .git/worktrees/public/ echo &amp;quot;Checking out gh-pages branch into public&amp;quot; git worktree add -B gh-pages public upstream/gh-pages echo &amp;quot;Removing existing files&amp;quot; rm -rf public/* echo &amp;quot;Generating site&amp;quot; hugo echo &amp;quot;Updating gh-pages branch&amp;quot; cd public &amp;amp;&amp;amp; git add --all &amp;amp;&amp;amp; git commit -m &amp;quot;Publishing to gh-pages (publish.</description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
       <link>https://huang-jch.github.io/quickstart/posts/my-first-post/</link>
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
