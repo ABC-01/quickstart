@@ -1,50 +1,195 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Index on My New Hugo Site</title>
-    <link>https://huang-jch.github.io/quickstart/categories/index/</link>
-    <description>Recent content in Index on My New Hugo Site</description>
+    <title>Index on Jane - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/categories/index/</link>
+    <description>Recent content in Index on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 02 Apr 2019 10:52:35 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
     
-	<atom:link href="https://huang-jch.github.io/quickstart/categories/index/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/categories/index/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Jane 主题预览</title>
+      <link>http://localhost:1313/post/jane-theme-preview/</link>
+      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/jane-theme-preview/</guid>
+      <description>主题预览,内容有待填充。</description>
+    </item>
+    
+    <item>
+      <title>Jane Theme Preview</title>
+      <link>http://localhost:1313/post/jane-theme-preview/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/jane-theme-preview/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
+
+&lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>JAVA LIST</title>
-      <link>https://huang-jch.github.io/quickstart/posts/java-list/</link>
+      <link>http://localhost:1313/post/java-list/</link>
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
-      <guid>https://huang-jch.github.io/quickstart/posts/java-list/</guid>
-      <description> List： List中元素可以重复，并且是有序的（这里的有序指的是按照放入的顺序进行存储。如按照顺序把1，2，3存入List，那么，从List中遍历出来的顺序也是1，2，3）。
-ArrayList：  实际是一个数组，默认初始容量大小为 10，int size记录长度 默认将扩容至原来容量的 1.5 倍
-方法特点： ArrayList的当前容量足够大，add()操作的效率非常高，当扩容是进行大量的数组复制，最终将调用System.arraycopy()方法，add()效率相当高
- arrayList实际是数组，数组是一块连续的内存空间，如果在数组的任意位置插入元素，必然导致在该位置后的所有元素需要重新排列，因此，其效率相对会比较低。
- remove()方法和add()方法是雷同的。在任意位置移除元素后，都要进行数组的重组。删除的位置越靠前，数组重组时的开销越大。
-  总结：  按照插入顺序来保存元素，可以利用下标来查找值 优：按照下标访问元素最快 缺：在中间插入元素很慢 删除元素很慢  LinkedList:  LinkedList使用了循环双向链表数据结构。因此没有容量限制  方法特点：  add()将任意元素增加到队列的尾端，每次的元素增加都需要新建一个Entry对象，并进行更多的赋值操作。在频繁的系统调用中，对性能会产生一定的影响。 List接口还提供了在任意位置插入元素的方法：void add(int index,E element)，效率高; 首先要通过循环找到要删除的元素。如果要删除的位置处于List的前半段，则从前往后找；若其位置处于后半段，则从后往前找。因此无论要删除较为靠前或者靠后的元素都是非常高效的；但要移除List中间的元素却几乎要遍历完半个List，在List拥有大量元素的情况下，效率很低。 避免使用for循环,效率极低
-总结： 按照插入顺序来保存元素，可以利用下标来查找值
- 优：删除和添加数据所消耗的资源较少，且比ArrayList效率高。
- 缺：线程不安全，查找消耗的资源大，效率低，不能随机访问。
-  Vector（线程安全）：  与arrayList实现基本一致，就是线程安全  CopyOnWriteArrayList（线程安全）：  Copy-On-Write简称COW，是一种用于程序设计中的优化策略。其基本思路是，从一开始大家都在共享同一个内容，当某个人想要修改这个内容的时候，才会真正把内容Copy出去形成一个新的内容然后再改，这是一种延时懒惰策略。从JDK1.5开始Java并发包里提供了两个使用CopyOnWrite机制实现的并发容器,它们是CopyOnWriteArrayList和CopyOnWriteArraySet。CopyOnWrite容器非常有用，可以在非常多的并发场景中使用到。  注意：  减少扩容开销。根据实际需要，初始化CopyOnWriteMap的大小，避免写时CopyOnWriteMap扩容的开销。 使用批量添加。因为每次添加，容器每次都会进行复制，所以减少添加次数，可以减少容器的复制次数。如使用上面代码里的addBlackList方法。  缺点：  内存占用问题。 数据一致性问题。CopyOnWrite容器只能保证数据的最终一致性，不能保证数据的实时一致性。所以如果你希望写入的的数据，马上能读到，请不要使用CopyOnWrite容器。  </description>
+      <guid>http://localhost:1313/post/java-list/</guid>
+      <description>List： List中元素可以重复，并且是有序的（这里的有序指的是按照放入的顺序进行存储。如按照顺序把1，2，3存入List，那么，从List</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://huang-jch.github.io/quickstart/posts/my-first-post/</link>
+      <link>http://localhost:1313/post/my-first-post/</link>
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
-      <guid>https://huang-jch.github.io/quickstart/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/post/my-first-post/</guid>
       <description>第一次 哈哈www</description>
     </item>
     
     <item>
       <title>publish_to_ghpages</title>
-      <link>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</link>
+      <link>http://localhost:1313/post/publish_to_ghpages/</link>
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
-      <guid>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</guid>
-      <description>#!/bin/sh DIR=$(dirname &amp;quot;$0&amp;quot;) cd $DIR/.. if [[ $(git status -s) ]] then echo &amp;quot;The working directory is dirty. Please commit any pending changes.&amp;quot; exit 1; fi echo &amp;quot;Deleting old publication&amp;quot; rm -rf public mkdir public git worktree prune rm -rf .git/worktrees/public/ echo &amp;quot;Checking out gh-pages branch into public&amp;quot; git worktree add -B gh-pages public upstream/gh-pages echo &amp;quot;Removing existing files&amp;quot; rm -rf public/* echo &amp;quot;Generating site&amp;quot; hugo echo &amp;quot;Updating gh-pages branch&amp;quot; cd public &amp;amp;&amp;amp; git add --all &amp;amp;&amp;amp; git commit -m &amp;quot;Publishing to gh-pages (publish.</description>
+      <guid>http://localhost:1313/post/publish_to_ghpages/</guid>
+      <description>#!/bin/sh DIR=$(dirname &amp;quot;$0&amp;quot;) cd $DIR/.. if [[ $(git status -s) ]] then echo &amp;quot;The working directory is dirty. Please commit any pending changes.&amp;quot; exit 1; fi echo &amp;quot;Deleting old publication&amp;quot; rm -rf public mkdir public git worktree prune rm -rf .git/worktrees/public/ echo &amp;quot;Checking out gh-pages branch into public&amp;quot; git worktree add -B gh-pages public upstream/gh-pages echo &amp;quot;Removing existing files&amp;quot; rm -rf public/* echo &amp;quot;Generating site&amp;quot; hugo echo &amp;quot;Updating gh-pages branch&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes Preview</title>
+      <link>http://localhost:1313/post/shortcodes-preview/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/shortcodes-preview/</guid>
+      <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
+
+&lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;
+
+&lt;p&gt;Hugo created &lt;strong&gt;shortcodes&lt;/strong&gt; to circumvent these limitations.&lt;/p&gt;
+
+&lt;p&gt;A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a [partial template][partials] instead.&lt;/p&gt;
+
+&lt;p&gt;In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.&lt;/p&gt;
+
+&lt;p&gt;More details: &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;https://gohugo.io/content-management/shortcodes/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Image Preview</title>
+      <link>http://localhost:1313/post/image-preview/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/image-preview/</guid>
+      <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
+
+&lt;h2 id=&#34;normal-image&#34;&gt;Normal Image&lt;/h2&gt;
+
+&lt;p&gt;This is an image in &lt;code&gt;static/image&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![This is an image in `static/image` folder.](/image/example.jpg)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes Notice Preview</title>
+      <link>http://localhost:1313/post/shortcode-notice/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/shortcode-notice/</guid>
+      <description>normal use Note example: {{% notice note %}} A notice disclaimer {{% /notice %}} Result: note A notice disclaimer You could custom title : {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} 笔记 A notice disclaimer tip {{% notice tip %}} A tip disclaimer {{% /tip %}} tip A tip disclaimer info {{% notice info %}} A info disclaimer {{% /notice %}} info An information</description>
+    </item>
+    
+    <item>
+      <title>Jane-Theme Footnote Preview</title>
+      <link>http://localhost:1313/post/doc-footnote-preview/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/doc-footnote-preview/</guid>
+      <description>&lt;p&gt;Hugo-theme-jane optimized for footnote. When you mouse hover the footnote&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:example&#34;&gt;&lt;a href=&#34;#fn:example&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; , footnote content will be displayed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>English Creating a New Theme</title>
+      <link>http://localhost:1313/post/english-preview/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/english-preview/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
+      <link>http://localhost:1313/post/this-is-a-very-long-title/</link>
+      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/this-is-a-very-long-title/</guid>
+      <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>http://localhost:1313/post/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>http://localhost:1313/post/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/goisforlovers/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://localhost:1313/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>http://localhost:1313/post/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>http://localhost:1313/post/syntax-highlighting/</link>
+      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/syntax-highlighting/</guid>
+      <description>&lt;p&gt;More detail: &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting | Hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function helloWorld () {
+  alert(&amp;quot;Hello, World!&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
