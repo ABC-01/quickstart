@@ -5,10 +5,38 @@
     <link>https://huang-jch.github.io/quickstart/tags/</link>
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Apr 2019 10:52:35 +0800</lastBuildDate>
     
 	<atom:link href="https://huang-jch.github.io/quickstart/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tag 1</title>
+      <link>https://huang-jch.github.io/quickstart/tags/tag-1/</link>
+      <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
+      
+      <guid>https://huang-jch.github.io/quickstart/tags/tag-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag 2</title>
+      <link>https://huang-jch.github.io/quickstart/tags/tag-2/</link>
+      <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
+      
+      <guid>https://huang-jch.github.io/quickstart/tags/tag-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag 3</title>
+      <link>https://huang-jch.github.io/quickstart/tags/tag-3/</link>
+      <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
+      
+      <guid>https://huang-jch.github.io/quickstart/tags/tag-3/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

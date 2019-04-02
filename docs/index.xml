@@ -5,10 +5,10 @@
     <link>https://huang-jch.github.io/quickstart/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 02 Apr 2019 10:52:35 +0800</lastBuildDate>
     
-	<atom:link href="https://huang-jch.github.io/quickstart/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://huang-jch.github.io/quickstart/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,7 +17,8 @@
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
       <guid>https://huang-jch.github.io/quickstart/posts/java-list/</guid>
-      <description> List： List中元素可以重复，并且是有序的（这里的有序指的是按照放入的顺序进行存储。如按照顺序把1，2，3存入List，那么，从List中遍历出来的顺序也是1，2，3）。
+      
+        <description> List： List中元素可以重复，并且是有序的（这里的有序指的是按照放入的顺序进行存储。如按照顺序把1，2，3存入List，那么，从List中遍历出来的顺序也是1，2，3）。
 ArrayList：  实际是一个数组，默认初始容量大小为 10，int size记录长度 默认将扩容至原来容量的 1.5 倍
 方法特点： ArrayList的当前容量足够大，add()操作的效率非常高，当扩容是进行大量的数组复制，最终将调用System.arraycopy()方法，add()效率相当高
  arrayList实际是数组，数组是一块连续的内存空间，如果在数组的任意位置插入元素，必然导致在该位置后的所有元素需要重新排列，因此，其效率相对会比较低。
@@ -27,15 +28,7 @@ ArrayList：  实际是一个数组，默认初始容量大小为 10，int size�
  优：删除和添加数据所消耗的资源较少，且比ArrayList效率高。
  缺：线程不安全，查找消耗的资源大，效率低，不能随机访问。
   Vector（线程安全）：  与arrayList实现基本一致，就是线程安全  CopyOnWriteArrayList（线程安全）：  Copy-On-Write简称COW，是一种用于程序设计中的优化策略。其基本思路是，从一开始大家都在共享同一个内容，当某个人想要修改这个内容的时候，才会真正把内容Copy出去形成一个新的内容然后再改，这是一种延时懒惰策略。从JDK1.5开始Java并发包里提供了两个使用CopyOnWrite机制实现的并发容器,它们是CopyOnWriteArrayList和CopyOnWriteArraySet。CopyOnWrite容器非常有用，可以在非常多的并发场景中使用到。  注意：  减少扩容开销。根据实际需要，初始化CopyOnWriteMap的大小，避免写时CopyOnWriteMap扩容的开销。 使用批量添加。因为每次添加，容器每次都会进行复制，所以减少添加次数，可以减少容器的复制次数。如使用上面代码里的addBlackList方法。  缺点：  内存占用问题。 数据一致性问题。CopyOnWrite容器只能保证数据的最终一致性，不能保证数据的实时一致性。所以如果你希望写入的的数据，马上能读到，请不要使用CopyOnWrite容器。  </description>
-    </item>
-    
-    <item>
-      <title>JAVA publish_to_ghpages</title>
-      <link>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</link>
-      <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
-      <guid>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</guid>
-      <description>#!/bin/sh DIR=$(dirname &amp;quot;$0&amp;quot;) cd $DIR/.. if [[ $(git status -s) ]] then echo &amp;quot;The working directory is dirty. Please commit any pending changes.&amp;quot; exit 1; fi echo &amp;quot;Deleting old publication&amp;quot; rm -rf public mkdir public git worktree prune rm -rf .git/worktrees/public/ echo &amp;quot;Checking out gh-pages branch into public&amp;quot; git worktree add -B gh-pages public upstream/gh-pages echo &amp;quot;Removing existing files&amp;quot; rm -rf public/* echo &amp;quot;Generating site&amp;quot; hugo echo &amp;quot;Updating gh-pages branch&amp;quot; cd public &amp;amp;&amp;amp; git add --all &amp;amp;&amp;amp; git commit -m &amp;quot;Publishing to gh-pages (publish.</description>
     </item>
     
     <item>
@@ -44,7 +37,20 @@ ArrayList：  实际是一个数组，默认初始容量大小为 10，int size�
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
       <guid>https://huang-jch.github.io/quickstart/posts/my-first-post/</guid>
-      <description>第一次 哈哈www</description>
+      
+        <description>第一次 哈哈www</description>
+      
+    </item>
+    
+    <item>
+      <title>publish_to_ghpages</title>
+      <link>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</link>
+      <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
+      
+      <guid>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</guid>
+      
+        <description>#!/bin/sh DIR=$(dirname &amp;quot;$0&amp;quot;) cd $DIR/.. if [[ $(git status -s) ]] then echo &amp;quot;The working directory is dirty. Please commit any pending changes.&amp;quot; exit 1; fi echo &amp;quot;Deleting old publication&amp;quot; rm -rf public mkdir public git worktree prune rm -rf .git/worktrees/public/ echo &amp;quot;Checking out gh-pages branch into public&amp;quot; git worktree add -B gh-pages public upstream/gh-pages echo &amp;quot;Removing existing files&amp;quot; rm -rf public/* echo &amp;quot;Generating site&amp;quot; hugo echo &amp;quot;Updating gh-pages branch&amp;quot; cd public &amp;amp;&amp;amp; git add --all &amp;amp;&amp;amp; git commit -m &amp;quot;Publishing to gh-pages (publish.</description>
+      
     </item>
     
   </channel>

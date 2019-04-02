@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="https://huang-jch.github.io/quickstart/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
     <loc>https://huang-jch.github.io/quickstart/posts/java-list/</loc>
-    <lastmod>2019-04-02T10:52:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</loc>
     <lastmod>2019-04-02T10:52:35+08:00</lastmod>
   </url>
   
@@ -18,7 +13,18 @@
   </url>
   
   <url>
+    <loc>https://huang-jch.github.io/quickstart/posts/publish_to_ghpages/</loc>
+    <lastmod>2019-04-02T10:52:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://huang-jch.github.io/quickstart/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://huang-jch.github.io/quickstart/categories/index/</loc>
+    <lastmod>2019-04-02T10:52:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,7 +41,26 @@
   </url>
   
   <url>
+    <loc>https://huang-jch.github.io/quickstart/tags/tag-1/</loc>
+    <lastmod>2019-04-02T10:52:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://huang-jch.github.io/quickstart/tags/tag-2/</loc>
+    <lastmod>2019-04-02T10:52:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://huang-jch.github.io/quickstart/tags/tag-3/</loc>
+    <lastmod>2019-04-02T10:52:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://huang-jch.github.io/quickstart/tags/</loc>
+    <lastmod>2019-04-02T10:52:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   

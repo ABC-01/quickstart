@@ -5,10 +5,19 @@
     <link>https://huang-jch.github.io/quickstart/categories/</link>
     <description>Recent content in Categories on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     
 	<atom:link href="https://huang-jch.github.io/quickstart/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Index</title>
+      <link>https://huang-jch.github.io/quickstart/categories/index/</link>
+      <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
+      
+      <guid>https://huang-jch.github.io/quickstart/categories/index/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
