@@ -1,11 +1,8 @@
-#baseURL = "https://huang-jch.github.io/quickstart/"
-
-
 # This is a simple configuration.
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
 
-baseURL = "http://localhost:1313/"
+baseURL = "https://huang-jch.github.io/quickstart/"
 title = "Jane - A super concise theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true

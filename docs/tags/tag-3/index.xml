@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag 3 on Jane - A super concise theme for Hugo</title>
-    <link>http://localhost:1313/tags/tag-3/</link>
+    <link>https://huang-jch.github.io/quickstart/tags/tag-3/</link>
     <description>Recent content in Tag 3 on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 02 Apr 2019 10:52:35 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/tag-3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://huang-jch.github.io/quickstart/tags/tag-3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JAVA LIST</title>
-      <link>http://localhost:1313/post/java-list/</link>
+      <link>https://huang-jch.github.io/quickstart/post/java-list/</link>
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/java-list/</guid>
+      <guid>https://huang-jch.github.io/quickstart/post/java-list/</guid>
       <description>List： List中元素可以重复，并且是有序的（这里的有序指的是按照放入的顺序进行存储。如按照顺序把1，2，3存入List，那么，从List</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/post/my-first-post/</link>
+      <link>https://huang-jch.github.io/quickstart/post/my-first-post/</link>
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <guid>https://huang-jch.github.io/quickstart/post/my-first-post/</guid>
       <description>第一次 哈哈www</description>
     </item>
     
     <item>
       <title>publish_to_ghpages</title>
-      <link>http://localhost:1313/post/publish_to_ghpages/</link>
+      <link>https://huang-jch.github.io/quickstart/post/publish_to_ghpages/</link>
       <pubDate>Tue, 02 Apr 2019 10:52:35 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/publish_to_ghpages/</guid>
+      <guid>https://huang-jch.github.io/quickstart/post/publish_to_ghpages/</guid>
       <description>#!/bin/sh DIR=$(dirname &amp;quot;$0&amp;quot;) cd $DIR/.. if [[ $(git status -s) ]] then echo &amp;quot;The working directory is dirty. Please commit any pending changes.&amp;quot; exit 1; fi echo &amp;quot;Deleting old publication&amp;quot; rm -rf public mkdir public git worktree prune rm -rf .git/worktrees/public/ echo &amp;quot;Checking out gh-pages branch into public&amp;quot; git worktree add -B gh-pages public upstream/gh-pages echo &amp;quot;Removing existing files&amp;quot; rm -rf public/* echo &amp;quot;Generating site&amp;quot; hugo echo &amp;quot;Updating gh-pages branch&amp;quot;</description>
     </item>
     
