@@ -1,5 +1,5 @@
 baseURL = "https://huang-jch.github.io/quickstart/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "ananke"
+theme = "hyde"
 publishDir = "docs"
