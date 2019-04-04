@@ -7,7 +7,11 @@ platform:
 
 steps:
 - name: build
-  image: golang
+  image: alpine
   commands:
   - pwd
+  - rm -vfr docs/*
   - ls
+  - hugo
+  - ls
+  - ls -l docs
