@@ -12,7 +12,7 @@ steps:
   - pwd
   - rm -vfr docs/*
   - ls
-  - chomd +x ./hugo
+  - chmod +x ./hugo
   - ./hugo
   - ls
   - ls -l docs
