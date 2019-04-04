@@ -12,6 +12,6 @@ steps:
   - pwd
   - rm -vfr docs/*
   - ls
-  - hugo
+  - ./hugo
   - ls
   - ls -l docs
