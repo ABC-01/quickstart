@@ -2,8 +2,27 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
-  image: maven:3-jdk-10
-  commands:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn test -B
+- name: build
+  image: plugins/hugo
+  settings:
+    hugo_version: 0.55
+    validate: true
+
+- name: deploy
+  image: appleboy/drone-scp
+  settings:
+    host: 94.191.32.237
+    target: /data
+    source: public/*
+    username:
+      from_secret: root
+    password:
+      from_secret: Admin568128361
+    port:
+      from_secret: 22
+  when:
+    branch:
+    - master
+    event:
+      exclude:
+      - pull_request
